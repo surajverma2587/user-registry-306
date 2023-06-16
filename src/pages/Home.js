@@ -6,12 +6,10 @@ import { Banner } from "../components/Banner";
 import { Users } from "../components/Users";
 
 export const Home = () => {
-  const [users, setUsers] = useState(getFromLocalStorage("users"));
-
   return (
     <Stack spacing={2}>
       <Banner />
-      <Users users={users} />
+      <Users users={getFromLocalStorage("users")} />
     </Stack>
   );
 };

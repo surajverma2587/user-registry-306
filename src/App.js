@@ -8,7 +8,7 @@ import { AppRoutes } from "./AppRoutes";
 export const App = () => {
   return (
     <BrowserRouter>
-      <Stack spacing={2}>
+      <Stack spacing={2} alignItems="center" alignContent="center">
         <NavigationBar />
         <Container maxWidth="lg">
           <AppRoutes />
